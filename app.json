@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Gemini",
+    "slug": "gemini-optimized-client",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.biodigitaltruth.gemini",
+      "largeHeap": true,
+      "permissions": [
+        "FOREGROUND_SERVICE",
+        "WAKE_LOCK",
+        "POST_NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#131314"
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "minSdkVersion": 24,
+            "enableProguardInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "jsEngine": "hermes",
+            "enableMinifyInReleaseBuilds": true
+          }
+        }
+      ]
+    ]
+  }
+}
